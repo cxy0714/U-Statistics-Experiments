@@ -1,0 +1,58 @@
+--- Starting Complexity Benchmark: Sat Mar 28 15:02:09 CST 2026 ---
+m=2 ...
+  dediag: scaling=2, flops=2.000000e+8, memory=1
+  no_dediag: scaling=2, flops=2.000200e+8, memory=1
+m=3 ...
+  dediag: scaling=3, flops=2.000200e+12, memory=1
+  no_dediag: scaling=3, flops=2.000600e+12, memory=1
+m=4 ...
+  dediag: scaling=3, flops=4.001500e+12, memory=100000000
+  no_dediag: scaling=3, flops=8.003100e+12, memory=100000000
+m=5 ...
+  dediag: scaling=3, flops=2.600450e+13, memory=100000000
+  no_dediag: scaling=3, flops=5.201330e+13, memory=100000000
+m=6 ...
+  dediag: scaling=3, flops=1.200201e+14, memory=100000000
+  no_dediag: scaling=3, flops=2.940688e+14, memory=100000000
+m=7 ...
+  dediag: scaling=3, flops=6.320912e+14, memory=100000000
+  no_dediag: scaling=3, flops=1.782360e+15, memory=100000000
+m=8 ...
+  dediag: scaling=4, flops=2.234305e+17, memory=1000000000000
+  no_dediag: scaling=4, flops=2.310540e+17, memory=1000000000000
+m=9 ...
+  dediag: scaling=4, flops=3.479586e+18, memory=1000000000000
+  no_dediag: scaling=4, flops=5.291262e+18, memory=1000000000000
+m=10 ...
+  dediag: scaling=5, flops=2.040477e+21, memory=10000000000000000
+  no_dediag: scaling=5, flops=2.079895e+21, memory=10000000000000000
+m=11 ...
+  dediag: scaling=5, flops=3.721436e+22, memory=10000000000000000
+  no_dediag: scaling=5, flops=5.500257e+22, memory=10000000000000000
+m=12 ...
+  dediag: scaling=5, flops=6.621813e+23, memory=10000000000000000
+  no_dediag: scaling=5, flops=1.134013e+24, memory=10000000000000000
+
+Saved to experiments/hoif/results/count_complexity_20260328_150321.json
+--- Starting U2V Counting: Sat Mar 28 15:30:57 CST 2026 ---
+
+============================================================
+Experiment : consecutive_pairs
+Description: calA = {{i, i+1} : i=1..m-1}  (chain of adjacent pairs)
+============================================================
+   m |   valid partitions |      Bell(m) |    ratio
+----------------------------------------------------
+   2 |                  1 |            2 |   0.5000
+   3 |                  2 |            5 |   0.4000
+   4 |                  5 |           15 |   0.3333
+   5 |                 15 |           52 |   0.2885
+   6 |                 52 |          203 |   0.2562
+   7 |                203 |          877 |   0.2315
+   8 |                877 |         4140 |   0.2118
+   9 |               4140 |        21147 |   0.1958
+  10 |              21147 |       115975 |   0.1823
+  11 |             115975 |       678570 |   0.1709
+  12 |             678570 |      4213597 |   0.1610
+
+Results written to: experiments/hoif/results/count_u2v_20260328_153058.json
+--- All Tasks Finished: Sat Mar 28 15:31:28 CST 2026 ---

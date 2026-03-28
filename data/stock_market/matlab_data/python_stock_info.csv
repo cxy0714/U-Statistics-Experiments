@@ -1,0 +1,268 @@
+SectorIndex,StockIndex,Sector,StockSymbol
+1,1,Communication Services,ATVI
+1,2,Communication Services,T
+1,3,Communication Services,EA
+1,4,Communication Services,OMC
+1,5,Communication Services,TTWO
+1,6,Communication Services,DIS
+1,7,Communication Services,VZ
+2,1,Consumer Discretionary,AMZN
+2,2,Consumer Discretionary,AZO
+2,3,Consumer Discretionary,BBY
+2,4,Consumer Discretionary,BWA
+2,5,Consumer Discretionary,KMX
+2,6,Consumer Discretionary,DHI
+2,7,Consumer Discretionary,DRI
+2,8,Consumer Discretionary,DLTR
+2,9,Consumer Discretionary,EBAY
+2,10,Consumer Discretionary,F
+2,11,Consumer Discretionary,GPC
+2,12,Consumer Discretionary,HAS
+2,13,Consumer Discretionary,HD
+2,14,Consumer Discretionary,LEG
+2,15,Consumer Discretionary,LOW
+2,16,Consumer Discretionary,MAR
+2,17,Consumer Discretionary,MCD
+2,18,Consumer Discretionary,MGM
+2,19,Consumer Discretionary,MHK
+2,20,Consumer Discretionary,NWL
+2,21,Consumer Discretionary,NVR
+2,22,Consumer Discretionary,ORLY
+2,23,Consumer Discretionary,PHM
+2,24,Consumer Discretionary,PVH
+2,25,Consumer Discretionary,RL
+2,26,Consumer Discretionary,ROST
+2,27,Consumer Discretionary,RCL
+2,28,Consumer Discretionary,SBUX
+2,29,Consumer Discretionary,TJX
+2,30,Consumer Discretionary,TSCO
+2,31,Consumer Discretionary,VFC
+2,32,Consumer Discretionary,WHR
+2,33,Consumer Discretionary,YUM
+3,1,Consumer Staples,ADM
+3,2,Consumer Staples,MO
+3,3,Consumer Staples,CPB
+3,4,Consumer Staples,CHD
+3,5,Consumer Staples,CLX
+3,6,Consumer Staples,KO
+3,7,Consumer Staples,CL
+3,8,Consumer Staples,CAG
+3,9,Consumer Staples,COST
+3,10,Consumer Staples,EL
+3,11,Consumer Staples,GIS
+3,12,Consumer Staples,HRL
+3,13,Consumer Staples,K
+3,14,Consumer Staples,KMB
+3,15,Consumer Staples,KR
+3,16,Consumer Staples,TAP
+3,17,Consumer Staples,MNST
+3,18,Consumer Staples,PEP
+3,19,Consumer Staples,PG
+3,20,Consumer Staples,HSY
+3,21,Consumer Staples,TSN
+3,22,Consumer Staples,WBA
+4,1,Energy,APA
+4,2,Energy,COP
+4,3,Energy,EOG
+4,4,Energy,XOM
+4,5,Energy,HAL
+4,6,Energy,HES
+4,7,Energy,MRO
+4,8,Energy,OXY
+4,9,Energy,OKE
+4,10,Energy,PXD
+4,11,Energy,SLB
+4,12,Energy,WMB
+5,1,Financials,AXP
+5,2,Financials,AON
+5,3,Financials,AJG
+5,4,Financials,BAC
+5,5,Financials,BLK
+5,6,Financials,BK
+5,7,Financials,SCHW
+5,8,Financials,CB
+5,9,Financials,CINF
+5,10,Financials,C
+5,11,Financials,RE
+5,12,Financials,FITB
+5,13,Financials,BEN
+5,14,Financials,HBAN
+5,15,Financials,IVZ
+5,16,Financials,JPM
+5,17,Financials,KEY
+5,18,Financials,LNC
+5,19,Financials,MMC
+5,20,Financials,MCO
+5,21,Financials,NTRS
+5,22,Financials,RJF
+5,23,Financials,RF
+5,24,Financials,STT
+5,25,Financials,SIVB
+5,26,Financials,TROW
+5,27,Financials,TRV
+5,28,Financials,USB
+5,29,Financials,WRB
+5,30,Financials,ZION
+6,1,Health Care,ABT
+6,2,Health Care,ABMD
+6,3,Health Care,A
+6,4,Health Care,ABC
+6,5,Health Care,AMGN
+6,6,Health Care,BAX
+6,7,Health Care,BDX
+6,8,Health Care,BIO
+6,9,Health Care,BIIB
+6,10,Health Care,BMY
+6,11,Health Care,CAH
+6,12,Health Care,DVA
+6,13,Health Care,GILD
+6,14,Health Care,HSIC
+6,15,Health Care,HOLX
+6,16,Health Care,HUM
+6,17,Health Care,IDXX
+6,18,Health Care,JNJ
+6,19,Health Care,LH
+6,20,Health Care,MCK
+6,21,Health Care,MDT
+6,22,Health Care,MRK
+6,23,Health Care,PKI
+6,24,Health Care,PFE
+6,25,Health Care,DGX
+6,26,Health Care,REGN
+6,27,Health Care,RMD
+6,28,Health Care,SYK
+6,29,Health Care,COO
+6,30,Health Care,TMO
+6,31,Health Care,UHS
+6,32,Health Care,WAT
+6,33,Health Care,WST
+7,1,Industrials,MMM
+7,2,Industrials,AOS
+7,3,Industrials,ALK
+7,4,Industrials,AME
+7,5,Industrials,BA
+7,6,Industrials,CHRW
+7,7,Industrials,CAT
+7,8,Industrials,CTAS
+7,9,Industrials,CPRT
+7,10,Industrials,CMI
+7,11,Industrials,DE
+7,12,Industrials,DOV
+7,13,Industrials,EMR
+7,14,Industrials,EFX
+7,15,Industrials,FAST
+7,16,Industrials,FDX
+7,17,Industrials,GD
+7,18,Industrials,GE
+7,19,Industrials,HON
+7,20,Industrials,IEX
+7,21,Industrials,ITW
+7,22,Industrials,JBHT
+7,23,Industrials,JCI
+7,24,Industrials,LMT
+7,25,Industrials,NSC
+7,26,Industrials,NOC
+7,27,Industrials,ODFL
+7,28,Industrials,PCAR
+7,29,Industrials,PH
+7,30,Industrials,PNR
+7,31,Industrials,PWR
+7,32,Industrials,RSG
+7,33,Industrials,RHI
+7,34,Industrials,ROK
+7,35,Industrials,ROL
+7,36,Industrials,ROP
+7,37,Industrials,LUV
+7,38,Industrials,SWK
+7,39,Industrials,TXT
+7,40,Industrials,UNP
+7,41,Industrials,UPS
+7,42,Industrials,URI
+7,43,Industrials,GWW
+7,44,Industrials,WM
+8,1,Information Technology,AMD
+8,2,Information Technology,AKAM
+8,3,Information Technology,APH
+8,4,Information Technology,ADI
+8,5,Information Technology,AAPL
+8,6,Information Technology,AMAT
+8,7,Information Technology,ADSK
+8,8,Information Technology,ADP
+8,9,Information Technology,CDNS
+8,10,Information Technology,CSCO
+8,11,Information Technology,CTXS
+8,12,Information Technology,CTSH
+8,13,Information Technology,FFIV
+8,14,Information Technology,FISV
+8,15,Information Technology,IT
+8,16,Information Technology,HPQ
+8,17,Information Technology,IBM
+8,18,Information Technology,INTU
+8,19,Information Technology,JKHY
+8,20,Information Technology,JNPR
+8,21,Information Technology,LRCX
+8,22,Information Technology,MCHP
+8,23,Information Technology,MU
+8,24,Information Technology,MSFT
+8,25,Information Technology,MSI
+8,26,Information Technology,NTAP
+8,27,Information Technology,PAYX
+8,28,Information Technology,SWKS
+8,29,Information Technology,SNPS
+8,30,Information Technology,TXN
+8,31,Information Technology,TYL
+8,32,Information Technology,VRSN
+8,33,Information Technology,WDC
+9,1,Materials,APD
+9,2,Materials,ALB
+9,3,Materials,AVY
+9,4,Materials,EMN
+9,5,Materials,ECL
+9,6,Materials,FMC
+9,7,Materials,FCX
+9,8,Materials,IFF
+9,9,Materials,IP
+9,10,Materials,MLM
+9,11,Materials,PPG
+9,12,Materials,SEE
+9,13,Materials,SHW
+9,14,Materials,MOS
+9,15,Materials,VMC
+10,1,Real Estate,ARE
+10,2,Real Estate,AMT
+10,3,Real Estate,AVB
+10,4,Real Estate,BXP
+10,5,Real Estate,CCI
+10,6,Real Estate,DRE
+10,7,Real Estate,EQR
+10,8,Real Estate,ESS
+10,9,Real Estate,FRT
+10,10,Real Estate,HST
+10,11,Real Estate,IRM
+10,12,Real Estate,KIM
+10,13,Real Estate,MAA
+10,14,Real Estate,PLD
+10,15,Real Estate,O
+10,16,Real Estate,REG
+10,17,Real Estate,SPG
+10,18,Real Estate,UDR
+10,19,Real Estate,VTR
+10,20,Real Estate,WY
+11,1,Utilities,LNT
+11,2,Utilities,AEE
+11,3,Utilities,AEP
+11,4,Utilities,CNP
+11,5,Utilities,ED
+11,6,Utilities,D
+11,7,Utilities,DTE
+11,8,Utilities,EIX
+11,9,Utilities,ES
+11,10,Utilities,FE
+11,11,Utilities,NEE
+11,12,Utilities,NI
+11,13,Utilities,PNW
+11,14,Utilities,PEG
+11,15,Utilities,SRE
+11,16,Utilities,SO
+11,17,Utilities,WEC
+11,18,Utilities,XEL

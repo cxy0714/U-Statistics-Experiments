@@ -1,0 +1,145 @@
+[
+      {
+            "m": 2,
+            "dediag": {
+                  "scaling": 2,
+                  "flops": 200000000.0,
+                  "memory": 1.0
+            },
+            "no_dediag": {
+                  "scaling": 2,
+                  "flops": 200020000.0,
+                  "memory": 1.0
+            }
+      },
+      {
+            "m": 3,
+            "dediag": {
+                  "scaling": 3,
+                  "flops": 2000200000000.0,
+                  "memory": 1.0
+            },
+            "no_dediag": {
+                  "scaling": 3,
+                  "flops": 2000600020000.0,
+                  "memory": 1.0
+            }
+      },
+      {
+            "m": 4,
+            "dediag": {
+                  "scaling": 3,
+                  "flops": 4001500000000.0,
+                  "memory": 100000000.0
+            },
+            "no_dediag": {
+                  "scaling": 3,
+                  "flops": 8003100170000.0,
+                  "memory": 100000000.0
+            }
+      },
+      {
+            "m": 5,
+            "dediag": {
+                  "scaling": 3,
+                  "flops": 26004500120000.0,
+                  "memory": 100000000.0
+            },
+            "no_dediag": {
+                  "scaling": 3,
+                  "flops": 52013300940000.0,
+                  "memory": 100000000.0
+            }
+      },
+      {
+            "m": 6,
+            "dediag": {
+                  "scaling": 3,
+                  "flops": 120020100480000.0,
+                  "memory": 100000000.0
+            },
+            "no_dediag": {
+                  "scaling": 3,
+                  "flops": 294068804250000.0,
+                  "memory": 100000000.0
+            }
+      },
+      {
+            "m": 7,
+            "dediag": {
+                  "scaling": 3,
+                  "flops": 632091201960000.0,
+                  "memory": 100000000.0
+            },
+            "no_dediag": {
+                  "scaling": 3,
+                  "flops": 1782359519780000.0,
+                  "memory": 100000000.0
+            }
+      },
+      {
+            "m": 8,
+            "dediag": {
+                  "scaling": 4,
+                  "flops": 2.2343045000796e+17,
+                  "memory": 1000000000000.0
+            },
+            "no_dediag": {
+                  "scaling": 4,
+                  "flops": 2.3105398979706e+17,
+                  "memory": 1000000000000.0
+            }
+      },
+      {
+            "m": 9,
+            "dediag": {
+                  "scaling": 4,
+                  "flops": 3.47958637053318e+18,
+                  "memory": 1000000000000.0
+            },
+            "no_dediag": {
+                  "scaling": 4,
+                  "flops": 5.29126153580298e+18,
+                  "memory": 1000000000000.0
+            }
+      },
+      {
+            "m": 10,
+            "dediag": {
+                  "scaling": 5,
+                  "flops": 2.0404771472506463e+21,
+                  "memory": 1e+16
+            },
+            "no_dediag": {
+                  "scaling": 5,
+                  "flops": 2.0798950784307463e+21,
+                  "memory": 1e+16
+            }
+      },
+      {
+            "m": 11,
+            "dediag": {
+                  "scaling": 5,
+                  "flops": 3.721436484319238e+22,
+                  "memory": 1e+16
+            },
+            "no_dediag": {
+                  "scaling": 5,
+                  "flops": 5.500257482730102e+22,
+                  "memory": 1e+16
+            }
+      },
+      {
+            "m": 12,
+            "dediag": {
+                  "scaling": 5,
+                  "flops": 6.621813349004736e+23,
+                  "memory": 1e+16
+            },
+            "no_dediag": {
+                  "scaling": 5,
+                  "flops": 1.134012742804273e+24,
+                  "memory": 1e+16
+            }
+      }
+]

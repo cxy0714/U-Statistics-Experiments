@@ -1,0 +1,12 @@
+Sector,SectorIndex,StockCount
+Communication Services,1,7
+Consumer Discretionary,2,33
+Consumer Staples,3,22
+Energy,4,12
+Financials,5,30
+Health Care,6,33
+Industrials,7,44
+Information Technology,8,33
+Materials,9,15
+Real Estate,10,20
+Utilities,11,18
