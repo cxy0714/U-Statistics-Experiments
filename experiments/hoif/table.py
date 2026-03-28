@@ -6,12 +6,9 @@ import os
 
 # Find the latest benchmark file in the results directory
 list_of_files = glob.glob('experiments/hoif/results/benchmark_20260327_155952.json')
-if not list_of_files:
-    print("No JSON files found in experiments/hoif/results/")
-    exit()
-
 INPUT_FILE = max(list_of_files, key=os.path.getctime)
-OUTPUT_FILE = "experiments/hoif/results/benchmark_summary.txt"
+base_name = os.path.splitext(os.path.basename(INPUT_FILE))[0]
+OUTPUT_FILE = f"experiments/hoif/results/{base_name}_summary.txt"
 
 def generate_table(input_path, output_path):
     # 1. Load the JSON data

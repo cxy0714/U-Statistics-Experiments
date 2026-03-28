@@ -1,49 +1,47 @@
 #!/bin/bash
 #SBATCH --job-name=create_and_install_env
-#SBATCH --partition=64c512g # 
+#SBATCH --partition=64c512g 
 #SBATCH -N 1
 #SBATCH --ntasks-per-node=1
 #SBATCH --output=create_env_%j.log
 
-# 1. 加载 miniconda3 模块
+# 1. Load the miniconda3 module
 module load miniconda3
 
-# 2. 初始化 Conda，确保后续命令能正确执行
-# 这行很重要，它使得 conda 命令在非交互式 shell 中可用
+# 2. Initialize Conda to ensure subsequent commands execute correctly
+# This is crucial for making the 'conda' command available in non-interactive shells
 eval "$(conda shell.bash hook)"
 
-# 3. 定义你的 Conda 环境名称
+# 3. Define your Conda environment name
 ENV_NAME="U-stats"
 
-# 4. 检查环境是否存在。如果不存在，则创建它。
-# -y 选项表示自动同意安装
-echo "检查 Conda 环境 '${ENV_NAME}'..."
+# 4. Check if the environment exists. If not, create it.
+# The -y flag automatically confirms installation
+echo "Checking Conda environment: '${ENV_NAME}'..."
 if ! conda env list | grep -q "${ENV_NAME}"; then
-    echo "环境 '${ENV_NAME}' 不存在，正在创建..."
-    conda create -y -n "${ENV_NAME}" python=3.11 # 建议指定一个Python版本
-    echo "环境 '${ENV_NAME}' 创建成功。"
+    echo "Environment '${ENV_NAME}' not found. Creating it now..."
+    conda create -y -n "${ENV_NAME}" python=3.13 # Specifying a Python version is recommended
+    echo "Environment '${ENV_NAME}' created successfully."
 else
-    echo "环境 '${ENV_NAME}' 已存在。"
+    echo "Environment '${ENV_NAME}' already exists. Skipping creation."
 fi
 
-# 5. 激活 Conda 环境
+# 5. Activate the Conda environment
 conda activate "${ENV_NAME}"
-echo "已激活环境: $(conda env list | grep '*' | awk '{print $1}')"
+echo "Currently active environment: $(conda env list | grep '*' | awk '{print $1}')"
 
+# 6. Install or update required packages
+# You can use a requirements.txt file or list packages directly
+echo "Starting package installation/update..."
 
-# 6. 安装或更新所需的包
-# 你可以根据你的 requirements.txt 或者直接列出包
-echo "开始安装/更新包..."
-
-
-# 其他包建议用 pip 安装，除非 conda 源有更好的版本或特殊需求
+# It is generally recommended to use pip for these packages unless 
+# a specific conda version is required for compatibility
 python -m pip install --upgrade u-stats
-
 pip install torch pandas matplotlib networkx seaborn scipy igraph psutil
 
-echo "所有包安装/更新完成！"
+echo "All packages installed and updated successfully!"
 
-# 可选：显示已安装的包列表，方便调试
+# Optional: List installed packages for debugging and verification
 pip list
 
-echo "Slurm 作业完成。"
+echo "Slurm job completed."

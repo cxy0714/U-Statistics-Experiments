@@ -3,7 +3,7 @@ import json
 import numpy as np
 from datetime import datetime
 from u_stats import ustat, set_backend
-
+import torch
 set_backend("torch")
 
 SEED = 42
@@ -13,7 +13,7 @@ NUM_RUNS = 10
 OUTPUT_FILE = f"experiments/hoif/results/benchmark_{datetime.now().strftime('%Y%m%d_%H%M%S')}.json"
 
 print("Global warmup...")
-_tensors = [np.random.rand(100, 100).astype(np.float64) for _ in range(2)]
+_tensors = [np.random.rand(100, 100).astype(np.float32) for _ in range(2)]
 ustat(tensors=_tensors, expression=[[1,2],[2,3]], average=True)
 
 results = []
@@ -27,7 +27,7 @@ for order in ORDERS:
 
         # Generate data once per (order, size)
         np.random.seed(SEED)
-        tensors = [np.random.rand(size, size).astype(np.float64) for _ in range(num_tensors)]
+        tensors = [np.random.rand(size, size).astype(np.float32) for _ in range(num_tensors)]
 
         # Warmup
         ustat(tensors=tensors, expression=mode, average=True)
