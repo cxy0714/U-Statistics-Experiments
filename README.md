@@ -43,7 +43,7 @@ https://github.com/cxy0714/HOIF
 ### Table 6
 
 - **Main scripts:** [`run_count_complexity.py`](experiments/hoif/run_count_complexity.py), [`run_count_u2v.py`](experiments/hoif/run_count_u2v.py)
-- **Execution script:** [`run_hoif_count.slurm`](sh/run_hoif_count.slurm) (on CPU cluster); manual execution on single GPU machine.
+- **Execution script:** [`run_hoif_count.slurm`](sh/run_hoif_count.slurm) 
 - **Output results:** [`count_complexity_20260328_150321.json`](experiments/hoif/results/count_complexity_20260328_150321.json), [`count_u2v_20260328_153058.json`](experiments/hoif/results/count_u2v_20260328_153058.json), [`count_hoif_57008502.out`](experiments/hoif/results/count_hoif_57008502.out)
 
 ---
