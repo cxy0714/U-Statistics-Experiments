@@ -85,7 +85,7 @@ All scripts and results for this section are in [`experiments/dcov/`](experiment
 
 #### Shao's MATLAB Implementation
 
-All scripts and results are in [`data/stock_market/`](data/stock_market/), also see their [`https://github.com/yzhanghf/JASA-TM-2022-0839`](github repository).
+All scripts and results are in [`data/stock_market/`](data/stock_market/), also see their [`github repository`](https://github.com/yzhanghf/JASA-TM-2022-0839).
 
 - **Complete U-statistics:** [`only_dcov.m`](data/stock_market/only_dcov.m)
 - **Randomized U-statistics:** [`randmized.m`](data/stock_market/randmized.m)
