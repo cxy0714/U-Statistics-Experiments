@@ -1,0 +1,579 @@
+{
+  "meta": {
+    "motif_size": 4,
+    "mode": "igraph",
+    "verify": true,
+    "n": 2000,
+    "p_values": [
+      0.0005,
+      0.001,
+      0.005,
+      0.01,
+      0.05,
+      0.1,
+      0.2,
+      0.4,
+      0.6,
+      0.8
+    ],
+    "num_trials": 3,
+    "peregrine_threads": 40,
+    "igraph_timeout": 3600,
+    "started_at": "2026-03-28T15:57:23.609439"
+  },
+  "experiments": [
+    {
+      "graph": {
+        "nodes": 1268,
+        "edges": 1026
+      },
+      "ustat": {
+        "result": null,
+        "time": null,
+        "error": null
+      },
+      "peregrine": {
+        "result": null,
+        "time": null,
+        "error": null
+      },
+      "igraph": {
+        "result": {
+          "1": 375,
+          "2": 1141,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        },
+        "time": 0.0816488265991211,
+        "error": null
+      },
+      "verify": null,
+      "size": 4,
+      "n": 2000,
+      "p": 0.0005,
+      "trial": 0,
+      "seed": 929948699,
+      "timestamp": "2026-03-28T15:57:24.363670"
+    },
+    {
+      "graph": {
+        "nodes": 1245,
+        "edges": 973
+      },
+      "ustat": {
+        "result": null,
+        "time": null,
+        "error": null
+      },
+      "peregrine": {
+        "result": null,
+        "time": null,
+        "error": null
+      },
+      "igraph": {
+        "result": {
+          "1": 354,
+          "2": 998,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        },
+        "time": 0.07262182235717773,
+        "error": null
+      },
+      "verify": null,
+      "size": 4,
+      "n": 2000,
+      "p": 0.0005,
+      "trial": 1,
+      "seed": 549342068,
+      "timestamp": "2026-03-28T15:57:24.935018"
+    },
+    {
+      "graph": {
+        "nodes": 1209,
+        "edges": 946
+      },
+      "ustat": {
+        "result": null,
+        "time": null,
+        "error": null
+      },
+      "peregrine": {
+        "result": null,
+        "time": null,
+        "error": null
+      },
+      "igraph": {
+        "result": {
+          "1": 291,
+          "2": 873,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        },
+        "time": 0.07143449783325195,
+        "error": null
+      },
+      "verify": null,
+      "size": 4,
+      "n": 2000,
+      "p": 0.0005,
+      "trial": 2,
+      "seed": 2216880198,
+      "timestamp": "2026-03-28T15:57:25.498004"
+    },
+    {
+      "graph": {
+        "nodes": 1722,
+        "edges": 1996
+      },
+      "ustat": {
+        "result": null,
+        "time": null,
+        "error": null
+      },
+      "peregrine": {
+        "result": null,
+        "time": null,
+        "error": null
+      },
+      "igraph": {
+        "result": {
+          "1": 2757,
+          "2": 8224,
+          "3": 8,
+          "4": 2,
+          "5": 0,
+          "6": 0
+        },
+        "time": 0.07432866096496582,
+        "error": null
+      },
+      "verify": null,
+      "size": 4,
+      "n": 2000,
+      "p": 0.001,
+      "trial": 0,
+      "seed": 247614039,
+      "timestamp": "2026-03-28T15:57:26.079342"
+    },
+    {
+      "graph": {
+        "nodes": 1713,
+        "edges": 1931
+      },
+      "ustat": {
+        "result": null,
+        "time": null,
+        "error": null
+      },
+      "peregrine": {
+        "result": null,
+        "time": null,
+        "error": null
+      },
+      "igraph": {
+        "result": {
+          "1": 2289,
+          "2": 7036,
+          "3": 0,
+          "4": 2,
+          "5": 0,
+          "6": 0
+        },
+        "time": 0.07902407646179199,
+        "error": null
+      },
+      "verify": null,
+      "size": 4,
+      "n": 2000,
+      "p": 0.001,
+      "trial": 1,
+      "seed": 4161974704,
+      "timestamp": "2026-03-28T15:57:26.734979"
+    },
+    {
+      "graph": {
+        "nodes": 1717,
+        "edges": 1930
+      },
+      "ustat": {
+        "result": null,
+        "time": null,
+        "error": null
+      },
+      "peregrine": {
+        "result": null,
+        "time": null,
+        "error": null
+      },
+      "igraph": {
+        "result": {
+          "1": 2553,
+          "2": 7491,
+          "3": 3,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        },
+        "time": 0.10850906372070312,
+        "error": null
+      },
+      "verify": null,
+      "size": 4,
+      "n": 2000,
+      "p": 0.001,
+      "trial": 2,
+      "seed": 1633884425,
+      "timestamp": "2026-03-28T15:57:27.433345"
+    },
+    {
+      "graph": {
+        "nodes": 2000,
+        "edges": 10193
+      },
+      "ustat": {
+        "result": null,
+        "time": null,
+        "error": null
+      },
+      "peregrine": {
+        "result": null,
+        "time": null,
+        "error": null
+      },
+      "igraph": {
+        "result": {
+          "1": 339724,
+          "2": 1026983,
+          "3": 5624,
+          "4": 1266,
+          "5": 14,
+          "6": 0
+        },
+        "time": 0.2837696075439453,
+        "error": null
+      },
+      "verify": null,
+      "size": 4,
+      "n": 2000,
+      "p": 0.005,
+      "trial": 0,
+      "seed": 3970917668,
+      "timestamp": "2026-03-28T15:57:28.726437"
+    },
+    {
+      "graph": {
+        "nodes": 2000,
+        "edges": 9872
+      },
+      "ustat": {
+        "result": null,
+        "time": null,
+        "error": null
+      },
+      "peregrine": {
+        "result": null,
+        "time": null,
+        "error": null
+      },
+      "igraph": {
+        "result": {
+          "1": 313446,
+          "2": 947102,
+          "3": 4215,
+          "4": 1236,
+          "5": 11,
+          "6": 1
+        },
+        "time": 0.2638716697692871,
+        "error": null
+      },
+      "verify": null,
+      "size": 4,
+      "n": 2000,
+      "p": 0.005,
+      "trial": 1,
+      "seed": 1343488502,
+      "timestamp": "2026-03-28T15:57:29.942327"
+    },
+    {
+      "graph": {
+        "nodes": 1999,
+        "edges": 10049
+      },
+      "ustat": {
+        "result": null,
+        "time": null,
+        "error": null
+      },
+      "peregrine": {
+        "result": null,
+        "time": null,
+        "error": null
+      },
+      "igraph": {
+        "result": {
+          "1": 328836,
+          "2": 990369,
+          "3": 4911,
+          "4": 1243,
+          "5": 11,
+          "6": 0
+        },
+        "time": 0.24570894241333008,
+        "error": null
+      },
+      "verify": null,
+      "size": 4,
+      "n": 2000,
+      "p": 0.005,
+      "trial": 2,
+      "seed": 962881871,
+      "timestamp": "2026-03-28T15:57:31.070201"
+    },
+    {
+      "graph": {
+        "nodes": 2000,
+        "edges": 19927
+      },
+      "ustat": {
+        "result": null,
+        "time": null,
+        "error": null
+      },
+      "peregrine": {
+        "result": null,
+        "time": null,
+        "error": null
+      },
+      "igraph": {
+        "result": {
+          "1": 2554734,
+          "2": 7662982,
+          "3": 74001,
+          "4": 19295,
+          "5": 395,
+          "6": 0
+        },
+        "time": 1.7228405475616455,
+        "error": null
+      },
+      "verify": null,
+      "size": 4,
+      "n": 2000,
+      "p": 0.01,
+      "trial": 0,
+      "seed": 2350681596,
+      "timestamp": "2026-03-28T15:57:44.228899"
+    },
+    {
+      "graph": {
+        "nodes": 2000,
+        "edges": 19937
+      },
+      "ustat": {
+        "result": null,
+        "time": null,
+        "error": null
+      },
+      "peregrine": {
+        "result": null,
+        "time": null,
+        "error": null
+      },
+      "igraph": {
+        "result": {
+          "1": 2563530,
+          "2": 7685953,
+          "3": 78381,
+          "4": 19346,
+          "5": 438,
+          "6": 1
+        },
+        "time": 1.7321465015411377,
+        "error": null
+      },
+      "verify": null,
+      "size": 4,
+      "n": 2000,
+      "p": 0.01,
+      "trial": 1,
+      "seed": 1970074965,
+      "timestamp": "2026-03-28T15:57:49.748154"
+    },
+    {
+      "graph": {
+        "nodes": 2000,
+        "edges": 19753
+      },
+      "ustat": {
+        "result": null,
+        "time": null,
+        "error": null
+      },
+      "peregrine": {
+        "result": null,
+        "time": null,
+        "error": null
+      },
+      "igraph": {
+        "result": {
+          "1": 2486304,
+          "2": 7465386,
+          "3": 72298,
+          "4": 18517,
+          "5": 352,
+          "6": 1
+        },
+        "time": 1.6747100353240967,
+        "error": null
+      },
+      "verify": null,
+      "size": 4,
+      "n": 2000,
+      "p": 0.01,
+      "trial": 2,
+      "seed": 1589468334,
+      "timestamp": "2026-03-28T15:57:55.084900"
+    },
+    {
+      "graph": {
+        "nodes": 2000,
+        "edges": 100019
+      },
+      "ustat": {
+        "result": null,
+        "time": null,
+        "error": null
+      },
+      "peregrine": {
+        "result": null,
+        "time": null,
+        "error": null
+      },
+      "igraph": {
+        "result": {
+          "1": 285514893,
+          "2": 856546347,
+          "3": 45092683,
+          "4": 11279330,
+          "5": 1185345,
+          "6": 10558
+        },
+        "time": 619.706485748291,
+        "error": null
+      },
+      "verify": null,
+      "size": 4,
+      "n": 2000,
+      "p": 0.05,
+      "trial": 0,
+      "seed": 1724787046,
+      "timestamp": "2026-03-28T16:28:54.168615"
+    },
+    {
+      "graph": {
+        "nodes": 2000,
+        "edges": 100021
+      },
+      "ustat": {
+        "result": null,
+        "time": null,
+        "error": null
+      },
+      "peregrine": {
+        "result": null,
+        "time": null,
+        "error": null
+      },
+      "igraph": {
+        "result": {
+          "1": 285694885,
+          "2": 856841215,
+          "3": 44958729,
+          "4": 11285008,
+          "5": 1178764,
+          "6": 10161
+        },
+        "time": 619.4993574619293,
+        "error": null
+      },
+      "verify": null,
+      "size": 4,
+      "n": 2000,
+      "p": 0.05,
+      "trial": 1,
+      "seed": 3392325176,
+      "timestamp": "2026-03-28T16:59:52.872481"
+    },
+    {
+      "graph": {
+        "nodes": 2000,
+        "edges": 99327
+      },
+      "ustat": {
+        "result": null,
+        "time": null,
+        "error": null
+      },
+      "peregrine": {
+        "result": null,
+        "time": null,
+        "error": null
+      },
+      "igraph": {
+        "result": {
+          "1": 279620501,
+          "2": 839171504,
+          "3": 43868267,
+          "4": 10965510,
+          "5": 1146501,
+          "6": 10109
+        },
+        "time": 590.8480234146118,
+        "error": null
+      },
+      "verify": null,
+      "size": 4,
+      "n": 2000,
+      "p": 0.05,
+      "trial": 2,
+      "seed": 3011718545,
+      "timestamp": "2026-03-28T17:29:35.561178"
+    },
+    {
+      "graph": {
+        "nodes": 2000,
+        "edges": 199836
+      },
+      "ustat": {
+        "result": null,
+        "time": null,
+        "error": null
+      },
+      "peregrine": {
+        "result": null,
+        "time": null,
+        "error": null
+      },
+      "igraph": {
+        "result": null,
+        "time": 3600.044917345047,
+        "error": "timeout"
+      },
+      "verify": null,
+      "size": 4,
+      "n": 2000,
+      "p": 0.1,
+      "trial": 0,
+      "seed": 1348066798,
+      "timestamp": "2026-03-28T18:29:36.324408"
+    }
+  ]
+}

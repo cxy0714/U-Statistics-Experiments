@@ -1,0 +1,24 @@
+\begin{table}[htbp]
+\centering
+\caption{Triangle Counting Computation Time Comparison (seconds)}
+\label{tab:triangle_counting}
+\begin{tabular}{c|cc}
+\hline
+Edge Probability ($p$) & U-statistics & CuGraph \\
+\hline
+0.001 & 2.8014 & 0.1536 \\
+0.005 & 2.9564 & 0.5664 \\
+0.010 & 3.3363 & 1.0379 \\
+0.020 & 3.7830 & 1.9797 \\
+0.050 & 5.0856 & 4.9804 \\
+0.080 & 6.3764 & 8.1346 \\
+0.100 & 7.2829 & 10.3661 \\
+0.150 & 9.6873 & 15.3828 \\
+0.200 & 11.7283 & OOM \\
+0.800 & 37.6880 & OOM \\
+\hline
+\end{tabular}
+\end{table}
+
+% Note: OOM indicates Out Of Memory error
+% ---  indicates data not available

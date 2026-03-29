@@ -1,0 +1,16 @@
+\begin{tabular}{cccc}
+\toprule
+\makecell{\textbf{Edge} \\ \textbf{Prob.} $p$} & \makecell{\textbf{ustat} \\ \textbf{Time (s)}} & \makecell{\textbf{Peregrine} \\ \textbf{Time (s)}} & \makecell{\textbf{igraph} \\ \textbf{Time (s)}} \\
+\midrule
+0.0005 & 3.8413 & 0.1024 & 0.0752 \\
+0.0010 & 18.7463 & 0.1141 & 0.0873 \\
+0.0050 & 41.0730 & 0.1132 & 0.2645 \\
+0.0100 & 40.7701 & 0.1116 & 1.7099 \\
+0.0500 & 41.5188 & 0.2079 & 610.0180 \\
+0.1000 & 40.5648 & 0.8243 & OOT \\
+0.2000 & 41.2671 & 5.8045 & OOT \\
+0.4000 & 43.3735 & 48.7363 & OOT \\
+0.6000 & 39.6022 & 159.4699 & OOT \\
+0.8000 & 40.6578 & 292.4395 & OOT \\
+\bottomrule
+\end{tabular}
