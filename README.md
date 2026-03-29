@@ -40,7 +40,7 @@ https://github.com/cxy0714/HOIF
 
 ---
 
-### Table 6
+### Table 4
 
 - **Main scripts:** [`run_count_complexity.py`](experiments/hoif/run_count_complexity.py), [`run_count_u2v.py`](experiments/hoif/run_count_u2v.py)
 - **Execution script:** [`run_hoif_count.slurm`](sh/run_hoif_count.slurm) 
