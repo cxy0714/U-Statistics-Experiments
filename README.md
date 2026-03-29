@@ -52,7 +52,7 @@ https://github.com/cxy0714/HOIF
 
 All scripts and results for this section are in [`experiments/motif_count/`](experiments/motif_count/).
 
-### Tables 2 and 4
+### Tables 2 and 7
 
 Dependencies: [Peregrine](https://github.com/pdclab/peregrine) and [igraph](https://igraph.org/). Peregrine installation instructions are available at the link above; igraph is installed via pip in [`sh/env_update.slurm`](sh/env_update.slurm).
 
@@ -61,7 +61,7 @@ Dependencies: [Peregrine](https://github.com/pdclab/peregrine) and [igraph](http
 - **Output results:** [`benchmark_size3_fast_20260328_143440.json`](experiments/motif_count/results/benchmark_size3_fast_20260328_143440.json), [`benchmark_size3_igraph_20260328_143404.json`](experiments/motif_count/results/benchmark_size3_igraph_20260328_143404.json), [`benchmark_size4_fast_20260328_173329.json`](experiments/motif_count/results/benchmark_size4_fast_20260328_173329.json), [`benchmark_size4_igraph_20260328_155723.json`](experiments/motif_count/results/benchmark_size4_igraph_20260328_155723.json)
 - **Table generation:** [`run_table_cpu.py`](experiments/motif_count/run_table_cpu.py) → [`table_size3.txt`](experiments/motif_count/results/table_size3.txt), [`table_size4.txt`](experiments/motif_count/results/table_size4.txt)
 
-### Table 5
+### Table 8
 
 Dependencies: [cuGraph](https://docs.rapids.ai/api/cugraph/stable/). Installation instructions are available at the link above.
 
