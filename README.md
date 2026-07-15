@@ -46,6 +46,11 @@ https://github.com/cxy0714/HOIF
 - **Execution script:** [`run_hoif_count.slurm`](sh/run_hoif_count.slurm) 
 - **Output results:** [`count_complexity_20260328_150321.json`](experiments/hoif/results/count_complexity_20260328_150321.json), [`count_u2v_20260328_153058.json`](experiments/hoif/results/count_u2v_20260328_153058.json), [`count_hoif_57008502.out`](experiments/hoif/results/count_hoif_57008502.out)
 
+### Table 5
+
+- **Main script:** [`run_path_complexity_full.py`](experiments/hoif/run_path_complexity_full.py)
+- **Execution script:** [`run_hoif_path_complexity.slurm`](sh/run_hoif_path_complexity.slurm)
+- **Output results:** [`new_table_HOIF_used/`](experiments/hoif/results/new_table_HOIF_used/)
 ---
 
 ## Section 4.2: Motif Counts

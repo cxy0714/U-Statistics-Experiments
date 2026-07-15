@@ -1,0 +1,20 @@
+HOIF path-strategy report
+Setting: m=10, n=1000, dediag=True, repeats=3, backend=torch/CPU, dtype=float32
+Subexpressions (V-statistics) = Bell(m-1) = 21147
+path_time = mean time to find contraction paths (all subexpressions).
+exec_time = mean time to compute the U-statistic via UStats.compute.
+est_mem / flops / scaling / n^s counts are static estimates of the chosen paths (est_mem = largest intermediate, # elements).
+actual_mem(GB) = measured peak process-RSS increase during the contraction (real memory, excludes the resident input tensors).
+'skipped(oom)'   = actual RSS exceeded --mem-limit-gb while running, so the run was killed (est_mem is only informational).
+'skipped(timeout)' = pass exceeded its wall-clock budget.
+==============================================================================
+    optimizer  path_time(s)  exec_time(s)  est_mem(elems)  actual_mem(GB)      flops  scaling  n^2    n^3   n^4   n^5  n^6    u_value
+       greedy     4.134e+00  skipped(oom)       1.000e+12               -  2.415e+16        5  343  18860  1934    10    0          -
+           dp     7.405e+01     2.529e+03       1.000e+09          15.910  4.155e+15        4  689  18514  1944     0    0  1.953e-03
+     branch-1     7.367e+00  skipped(oom)       1.000e+12               -  3.301e+16        5  360  18470  2303    14    0          -
+     branch-2     2.616e+01  skipped(oom)       1.000e+12               -  6.052e+16        5  411  18632  2076    28    0          -
+   branch-all     2.161e+03  skipped(oom)       1.000e+15               -  8.461e+17        5  398  16101  4305   343    0          -
+      optimal     6.442e+03  skipped(oom)       1.000e+15               -  3.921e+19        6  297  10713  8828  1291   18          -
+         auto     7.216e+00  skipped(oom)       1.000e+12               -  3.301e+16        5  360  18470  2303    14    0          -
+      auto-hq     7.508e+01     2.526e+03       1.000e+09          16.000  4.155e+15        4  689  18514  1944     0    0  1.953e-03
+random-greedy     9.898e+01     2.702e+03       1.000e+09          15.996  4.158e+15        4  606  18597  1944     0    0  1.953e-03

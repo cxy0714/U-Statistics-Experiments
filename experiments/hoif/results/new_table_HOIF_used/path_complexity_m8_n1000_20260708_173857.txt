@@ -1,0 +1,20 @@
+HOIF path-strategy report
+Setting: m=8, n=1000, dediag=True, repeats=1, backend=torch/CPU, dtype=float32
+Subexpressions (V-statistics) = Bell(m-1) = 877
+path_time = mean time to find contraction paths (all subexpressions).
+exec_time = mean time to compute the U-statistic via UStats.compute.
+est_mem / flops / scaling / n^s counts are static estimates of the chosen paths (est_mem = largest intermediate, # elements).
+actual_mem(GB) = measured peak process-RSS increase during the contraction (real memory, excludes the resident input tensors).
+'skipped(oom)'   = actual RSS exceeded --mem-limit-gb while running, so the run was killed (est_mem is only informational).
+'skipped(timeout)' = pass exceeded its wall-clock budget.
+==============================================================================
+    optimizer  path_time(s)  exec_time(s)  est_mem(elems)  actual_mem(GB)      flops  scaling  n^2  n^3  n^4  n^5    u_value
+       greedy     1.766e-01     7.861e+02       1.000e+09          12.036  2.543e+13        4   56  810   11    0  7.808e-03
+           dp     1.085e+00     4.157e+02       1.000e+09          12.038  2.480e+13        4  113  753   11    0  7.808e-03
+     branch-1     3.099e-01     1.095e+03       1.000e+09          12.005  2.546e+13        4   65  801   11    0  7.808e-03
+     branch-2     5.690e-01     1.140e+03       1.000e+09          16.003  2.943e+13        4   74  790   13    0  7.808e-03
+   branch-all     4.247e+00     6.602e+03       1.000e+09          16.012  8.349e+13        4   71  766   40    0  7.808e-03
+      optimal     5.166e+00  skipped(oom)       1.000e+12               -  8.391e+15        5   58  664  151    4          -
+         auto     5.681e-01     1.155e+03       1.000e+09          16.032  2.943e+13        4   74  790   13    0  7.808e-03
+      auto-hq     1.061e+00     4.308e+02       1.000e+09          11.996  2.480e+13        4  113  753   11    0  7.808e-03
+random-greedy     3.624e+00     5.812e+02       1.000e+09          12.027  2.486e+13        4  103  763   11    0  7.808e-03

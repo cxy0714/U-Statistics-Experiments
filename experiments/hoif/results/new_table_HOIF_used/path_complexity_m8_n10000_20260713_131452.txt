@@ -1,0 +1,20 @@
+HOIF path-strategy report
+Setting: m=8, n=10000, dediag=True, repeats=3, backend=torch/CPU, dtype=float32
+Subexpressions (V-statistics) = Bell(m-1) = 877
+path_time = mean time to find contraction paths (all subexpressions).
+exec_time = mean time to compute the U-statistic via UStats.compute.
+est_mem / flops / scaling / n^s counts are static estimates of the chosen paths (est_mem = largest intermediate, # elements).
+actual_mem(GB) = measured peak process-RSS increase during the contraction (real memory, excludes the resident input tensors).
+'skipped(oom)'   = actual RSS exceeded --mem-limit-gb while running, so the run was killed (est_mem is only informational).
+'skipped(timeout)' = pass exceeded its wall-clock budget.
+==============================================================================
+    optimizer  path_time(s)      exec_time(s)  est_mem(elems)  actual_mem(GB)      flops  scaling  n^2  n^3  n^4  n^5  u_value
+       greedy     1.334e-01      skipped(oom)       1.000e+12               -  2.234e+17        4   56  810   11    0        -
+           dp     8.074e-01  skipped(timeout)       1.000e+12               -  2.228e+17        4  113  753   11    0        -
+     branch-1     2.120e-01      skipped(oom)       1.000e+12               -  2.235e+17        4   65  801   11    0        -
+     branch-2     4.158e-01      skipped(oom)       1.000e+12               -  2.634e+17        4   74  790   13    0        -
+   branch-all     3.247e+00      skipped(oom)       1.000e+12               -  8.035e+17        4   71  766   40    0        -
+      optimal     3.783e+00      skipped(oom)       1.000e+16               -  8.039e+20        5   58  664  151    4        -
+         auto     4.120e-01      skipped(oom)       1.000e+12               -  2.634e+17        4   74  790   13    0        -
+      auto-hq     8.673e-01      skipped(oom)       1.000e+12               -  2.228e+17        4  113  753   11    0        -
+random-greedy     2.937e+00  skipped(timeout)       1.000e+12               -  2.229e+17        4  103  763   11    0        -
