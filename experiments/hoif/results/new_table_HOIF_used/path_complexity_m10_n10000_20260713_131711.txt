@@ -1,0 +1,20 @@
+HOIF path-strategy report
+Setting: m=10, n=10000, dediag=True, repeats=3, backend=torch/CPU, dtype=float32
+Subexpressions (V-statistics) = Bell(m-1) = 21147
+path_time = mean time to find contraction paths (all subexpressions).
+exec_time = mean time to compute the U-statistic via UStats.compute.
+est_mem / flops / scaling / n^s counts are static estimates of the chosen paths (est_mem = largest intermediate, # elements).
+actual_mem(GB) = measured peak process-RSS increase during the contraction (real memory, excludes the resident input tensors).
+'skipped(oom)'   = actual RSS exceeded --mem-limit-gb while running, so the run was killed (est_mem is only informational).
+'skipped(timeout)' = pass exceeded its wall-clock budget.
+==============================================================================
+    optimizer      path_time(s)      exec_time(s)  est_mem(elems)  actual_mem(GB)      flops  scaling  n^2    n^3   n^4  n^5  u_value
+       greedy         4.236e+00  skipped(timeout)       1.000e+16               -  2.040e+21        5  343  18860  1934   10        -
+           dp         7.493e+01      skipped(oom)       1.000e+12               -  4.062e+19        4  689  18514  1944    0        -
+     branch-1         7.319e+00      skipped(oom)       1.000e+16               -  2.849e+21        5  360  18470  2303   14        -
+     branch-2         2.632e+01      skipped(oom)       1.000e+16               -  5.644e+21        5  411  18632  2076   28        -
+   branch-all         2.170e+03      skipped(oom)       1.000e+20               -  8.352e+22        5  398  16101  4305  343        -
+      optimal  skipped(timeout)  skipped(no-path)               -               -          -        -    -      -     -    -        -
+         auto         7.592e+00      skipped(oom)       1.000e+16               -  2.849e+21        5  360  18470  2303   14        -
+      auto-hq         7.893e+01  skipped(timeout)       1.000e+12               -  4.062e+19        4  689  18514  1944    0        -
+random-greedy         9.997e+01      skipped(oom)       1.000e+12               -  4.063e+19        4  607  18596  1944    0        -

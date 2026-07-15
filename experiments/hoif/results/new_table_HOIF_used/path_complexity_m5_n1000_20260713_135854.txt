@@ -1,0 +1,20 @@
+HOIF path-strategy report
+Setting: m=5, n=1000, dediag=True, repeats=3, backend=torch/CPU, dtype=float32
+Subexpressions (V-statistics) = Bell(m-1) = 15
+path_time = mean time to find contraction paths (all subexpressions).
+exec_time = mean time to compute the U-statistic via UStats.compute.
+est_mem / flops / scaling / n^s counts are static estimates of the chosen paths (est_mem = largest intermediate, # elements).
+actual_mem(GB) = measured peak process-RSS increase during the contraction (real memory, excludes the resident input tensors).
+'skipped(oom)'   = actual RSS exceeded --mem-limit-gb while running, so the run was killed (est_mem is only informational).
+'skipped(timeout)' = pass exceeded its wall-clock budget.
+==============================================================================
+    optimizer  path_time(s)  exec_time(s)  est_mem(elems)  actual_mem(GB)      flops  scaling  n^2  n^3    u_value
+       greedy     1.316e-03     1.280e-01       1.000e+06           0.054  2.605e+10        3    5   10  6.250e-02
+           dp     2.842e-03     1.095e-01       1.000e+06           0.046  1.407e+10        3    9    6  6.250e-02
+     branch-1     2.075e-03     1.068e-01       1.000e+06           0.000  2.804e+10        3    5   10  6.250e-02
+     branch-2     2.162e-03     1.074e-01       1.000e+06           0.008  2.006e+10        3    8    7  6.250e-02
+   branch-all     2.667e-03     1.348e-01       1.000e+06           0.009  1.606e+10        3    8    7  6.250e-02
+      optimal     1.914e-03     1.411e-01       1.000e+06           0.051  2.006e+10        3    6    9  6.250e-02
+         auto     1.938e-03     1.182e-01       1.000e+06           0.054  2.006e+10        3    6    9  6.250e-02
+      auto-hq     2.063e-03     1.170e-01       1.000e+06           0.015  2.006e+10        3    6    9  6.250e-02
+random-greedy     1.982e-02     1.598e-01       1.000e+06           0.015  1.806e+10        3    7    8  6.250e-02
